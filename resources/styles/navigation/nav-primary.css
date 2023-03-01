@@ -1,0 +1,16 @@
+.menu-primary-container {
+  .nav {
+    @apply flex space-x-12;
+    li {
+      @apply block;
+      a {
+        @apply flex items-center px-5 h-12 text-gray-900 dark:text-slate-100 font-semibold hover:text-brand;
+      }
+      &:last-child {
+        a {
+          @apply text-white bg-brand rounded-full;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="week"] {
+  @apply max-w-full rounded-[3px];
+}
+
+.gfield_error input[type="text"],
+.gfield_error input[type="email"],
+.gfield_error input[type="url"],
+.gfield_error input[type="password"],
+.gfield_error input[type="number"],
+.gfield_error input[type="date"],
+.gfield_error input[type="datetime-local"],
+.gfield_error input[type="month"],
+.gfield_error input[type="search"],
+.gfield_error input[type="tel"],
+.gfield_error input[type="time"],
+.gfield_error input[type="week"] {
+  @apply ring-red-500;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+textarea:focus {
+  @apply border-none outline-none ring ring-blue-500 ring-opacity-50;
+}
+label {
+  @apply block pb-1 pt-2 text-base font-bold text-gray-800;
+}
+textarea {
+  @apply block w-full rounded bg-white py-3 px-3 text-base shadow ring-1 ring-gray-300 sm:text-xl;
+}
+
+select {
+  @apply mt-1 block w-full appearance-none rounded py-5 pl-3 pr-10 text-base leading-tight ring-1 ring-gray-300 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.75rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  color-adjust: exact;
+}
+
+input[type="search"].search-product-input {
+  @apply w-80 max-w-full rounded bg-gray-50 bg-no-repeat px-6 py-3 text-xl ring-1 ring-gray-300;
+}
+input[type="search"].search-product-input:focus {
+  @apply ring ring-blue-500 ring-opacity-50;
+}
+
+.gform_fields {
+  @apply m-0 list-none p-0;
+}
+.gform_fields .gfield {
+  @apply mt-1 block;
+}
+.ginput_container {
+  @apply grid;
+}
+.ginput_container input {
+  @apply w-full;
+}
+.ginput_complex label {
+  @apply text-base;
+}
+
+.gform_footer {
+  @apply my-8;
+}
+
+.gform_validation_container {
+  @apply sr-only;
+}
+
+.textarea.small {
+  @apply h-40;
+}
+
+.gform_confirmation_wrapper {
+  @apply py-8;
+}
+
+.gform_confirmation_message {
+  @apply text-2xl font-normal text-green-600;
+}
+.gfield_description,
+.instruction {
+  @apply mt-1 text-sm;
+}
+
+.gfield_description.validation_message {
+  @apply text-sm text-red-500;
+}

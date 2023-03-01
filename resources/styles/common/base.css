@@ -1,0 +1,14 @@
+@layer base {
+  body {
+    @apply lg:pt-24;
+    &.admin-bar {
+      @apply lg:pt-32;
+    }
+  }
+  p {
+    @apply my-8 max-w-content leading-relaxed;
+  }
+  strong {
+    @apply font-bold;
+  }
+}

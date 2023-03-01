@@ -1,0 +1,16 @@
+.site-header {
+  @apply bg-gray-100 dark:bg-gray-900 h-24 fixed left-0 w-full top-0 flex items-center z-50;
+  .admin-bar & {
+    @apply top-8;
+  }
+  .sitetitle {
+    @apply text-3xl font-bold uppercase;
+  }
+  .custom-logo {
+    @apply block dark:hidden h-8 w-auto;
+  }
+  .inverse-logo {
+    @apply hidden dark:block h-8 w-auto;
+  }
+}
+

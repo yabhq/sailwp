@@ -1,0 +1,27 @@
+.entry-content ul:not(.wp-block-social-links):not(.blocks-gallery-grid),
+.entry-content ol:not(.wp-block-social-links)  {
+    @apply my-8 pl-6 list-outside;
+}
+.entry-content ul:not(.wp-block-social-links):not(.blocks-gallery-grid) {
+    @apply list-disc;
+}
+.entry-content ol:not(.wp-block-social-links) {
+    @apply list-decimal;
+}
+.entry-content ul li,
+.entry-content ol li {
+    @apply my-2;
+}
+.entry-content ul li::marker {
+    @apply text-brand text-2xl;
+}
+.entry-content ul ul,
+.entry-content ol ul {
+    @apply mt-0 list-inside !important;
+    list-style-type: circle !important;
+}
+.entry-content ol ol,
+.entry-content ul ol {
+    @apply ml-4 list-inside;
+    list-style-type: lower-latin;
+}

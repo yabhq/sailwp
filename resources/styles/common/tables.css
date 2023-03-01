@@ -1,0 +1,22 @@
+table {
+    @apply w-full my-8 text-lg leading-tight;
+}
+table thead,
+.wp-block-table thead {
+    @apply border-gray-100;
+    th {
+        @apply py-3 font-bold;
+    }
+}
+table th,
+table td,
+.wp-block-table td,
+.wp-block-table th {
+    @apply p-6 text-left border-0;
+}
+table tbody tr:nth-child(2n) td,
+.wp-block-table tbody tr:nth-child(2n) td,
+table thead th,
+.wp-block-table thead th {
+    @apply bg-gray-100;
+}

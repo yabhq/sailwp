@@ -1,0 +1,43 @@
+.entry-content > {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ol,
+  ul,
+  blockquote {
+    @apply mx-auto max-w-content;
+  }
+  p,
+  ol,
+  ul,
+  blockquote {
+    @apply leading-[1.8] text-lg leading-loose;
+  }
+  ol,
+  ul {
+    @apply text-lg;
+  }
+}
+
+.has-brand-color {
+  @apply text-brand;
+}
+.has-small-font-size {
+  @apply text-sm;
+}
+.has-normal-font-size {
+  @apply text-base;
+}
+.has-large-font-size {
+  @apply my-16 text-xl lg:text-2xl lg:leading-normal;
+}
+.has-brand-background-color {
+  @apply bg-brand text-white;
+}
+.has-text-align-center {
+  @apply mx-auto text-center;
+}

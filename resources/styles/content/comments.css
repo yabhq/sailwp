@@ -1,0 +1,5 @@
+.comment-list {
+  .comment {
+    @apply border-b border-gray-300 py-8;
+  }
+}
